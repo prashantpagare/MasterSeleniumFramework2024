@@ -55,8 +55,8 @@ public class BaseTest {
     public void startDriver(@Optional String browser){
 //        driver = new DriverManager().initializeDriver(browser);
 
-//      browser = System.getProperty("browser", browser);    // to run for testng
-      if(browser == null )browser = "CHROME";
+      browser = System.getProperty("browser", browser);    // to run for testng
+//      if(browser == null )browser = "CHROME";
 //        setDriver(new DriverManagerOriginal().initializeDriver(browser));
 //        setDriver(DriverManagerFactory.getManager(DriverType.valueOf(browser)).createDriver());   // Interface
         setDriverManager(DriverManagerFactoryAbstract.getManager(DriverType.valueOf(browser)));
