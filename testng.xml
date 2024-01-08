@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecommerce Tests" verbose="1" thread-count="2" parallel="tests">
+<!--    <test name="Chrome" thread-count="5" parallel="methods">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="org.selenium.pom.tests.MyFirstTestCase">
+            <methods>
+                <include name="GuestCheckoutUsingDirectBankTransfer"/>
+                <include name="LoginAndCheckoutUsingDirectBankTransfer"/>
+            </methods>
+        </class>
+        </classes>
+    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+<!--    <test name="Firefox" >
+        <parameter name="browser" value="FIREFOX"/>
+        <classes>
+            <class name="org.selenium.pom.tests.MyFirstTestCase">
+                <methods>
+                    <include name="GuestCheckoutUsingDirectBankTransfer"/>
+                    <include name="LoginAndCheckoutUsingDirectBankTransfer"/>
+                </methods>
+            </class>
+        </classes>
+    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+<!--    <test name="Chrome" thread-count="6" parallel="methods">
+        <parameter name="browser" value="CHROME"/>
+       <classes>
+           <class name="org.selenium.pom.tests.LoginTest">
+               <methods>
+                   <include name="loginDuringCheckout"/>
+               </methods>
+           </class>
+       </classes>
+    </test> &lt;!&ndash; Test &ndash;&gt;-->
+
+    <test name="Chrome" thread-count="6" parallel="methods">
+        <parameter name="browser" value="CHROME"/>
+        <packages>
+            <package name="org.selenium.pom.tests"/>
+        </packages>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

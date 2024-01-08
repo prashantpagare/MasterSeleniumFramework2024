@@ -1,0 +1,10 @@
+{
+  "firstName": "demo",
+  "lastName": "user",
+  "countryName" : "India",
+  "addressLineOne": "Pune",
+  "city": "Pune",
+  "stateName" : "Maharashtra",
+  "postCode": "411011",
+  "email": "demo121@gmail.com"
+}
